@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 import { SAVE_STATUSES, saveErrors } from './actions';
 import { focusElement } from '../../utilities/ui';
+import SipsDevModal from './SaveInProgressDevModal';
 
 const Element = Scroll.Element;
 const scroller = Scroll.scroller;
@@ -77,6 +78,7 @@ class SaveFormLink extends React.Component {
               {this.props.children || 'Finish this application later'}
             </button>
             {!this.props.children && '.'}
+            <SipsDevModal {...this.props} />
           </span>
         )}
       </div>
