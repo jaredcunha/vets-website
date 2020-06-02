@@ -118,6 +118,7 @@
     "@babel/register": "^7.9.0",
     "@department-of-veterans-affairs/generator-vets-website": "^3.3.5",
     "@octokit/rest": "^16.43.1",
+    "@pact-foundation/pact": "^9.11.0",
     "@sentry/browser": "^5.4.0",
     "ajv": "^6.10.2",
     "append-query": "2.0.1",
