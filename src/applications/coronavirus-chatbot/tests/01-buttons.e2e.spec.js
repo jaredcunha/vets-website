@@ -37,4 +37,4 @@ module.exports = E2eHelpers.createE2eTest(client => {
 });
 
 // Note: This test requires the real API. Run locally with yarn watch --env.api=https://dev-api.va.gov
-// module.exports['@disabled'] = true;
+module.exports['@disabled'] = true;
