@@ -5,7 +5,6 @@ import { expect } from 'chai';
 import { setupServer } from 'msw/node';
 
 import * as mocks from '../../msw-mocks';
-// import * as mocks from '../../msw-mocks';
 import { renderWithProfileReducers } from '../unit-test-helpers';
 
 import DirectDepositContent from '../../components/direct-deposit/DirectDepositContent';

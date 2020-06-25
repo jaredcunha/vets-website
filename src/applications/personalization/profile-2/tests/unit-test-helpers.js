@@ -1,6 +1,6 @@
 import { renderInReduxProvider } from 'platform/testing/unit/react-testing-library-helpers';
 
-import profileReducers from 'applications/personalization/profile360/reducers';
+import profile from 'applications/personalization/profile360/reducers';
 import connectedApps from 'applications/personalization/profile-2/components/connected-apps/reducers/connectedApps';
 import profileUi from '../reducers';
 
@@ -15,7 +15,7 @@ export function renderWithProfileReducers(
   { initialState = {}, reducers = {}, ...renderOptions } = {},
 ) {
   return renderInReduxProvider(ui, {
-    reducers: { ...profileReducers, profileUi, connectedApps, ...reducers },
+    reducers: { ...profile, profileUi, connectedApps, ...reducers },
     initialState,
     ...renderOptions,
   });
