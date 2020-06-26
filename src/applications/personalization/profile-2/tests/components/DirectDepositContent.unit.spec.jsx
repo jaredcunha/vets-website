@@ -81,10 +81,12 @@ function findCancelEditButton(view) {
   });
 }
 
-describe('DirectDepositContent', () => {
+describe.only('DirectDepositContent', () => {
   const server = setupServer(...mocks.updateDirectDepositSuccess);
+  console.log(server);
   before(() => {
     server.listen();
+    console.log(server);
   });
   afterEach(() => {
     server.resetHandlers();

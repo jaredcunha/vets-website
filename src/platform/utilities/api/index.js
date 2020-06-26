@@ -49,6 +49,7 @@ function isJson(response) {
 export function apiRequest(resource, optionalSettings = {}, success, error) {
   const baseUrl = `${environment.API_URL}/v0`;
   const url = resource[0] === '/' ? [baseUrl, resource].join('') : resource;
+  console.log(`fetch: ${url}`);
   const csrfTokenStored = localStorage.getItem('csrfToken');
 
   if (success) {

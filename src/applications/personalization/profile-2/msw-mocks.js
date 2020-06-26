@@ -10,6 +10,8 @@ export const newPaymentAccount = {
 
 const prefix = environment.API_URL;
 
+console.log(`mock:  ${prefix}/v0/ppiu/payment_information`);
+
 export const updateDirectDepositSuccess = [
   rest.put(
     // I'd prefer to just set the route as `ppiu/payment_information` or at least `v0/ppiu/payment_information`
